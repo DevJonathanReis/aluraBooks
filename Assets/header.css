@@ -1,0 +1,125 @@
+.cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--cor-de-fundo-secundario);
+    position: relative;
+    padding: 0 0.5em;
+}
+
+.cabecalhoMenuHamburguer{
+    width: 24px;
+    height: 24px;
+    background-image: url("../Assets/Img/Menu.png");
+    display: inline-block;
+}
+
+.containerBotao:checked ~ .containerLabel > .cabecalhoMenuHamburguer{
+    background-image: url("/Assets/Img/Menu\ Aberto.png");
+}
+
+.containerBotao:checked ~ .containerLabel{
+    background: var(--azul-degrade);
+}
+
+.divMenuLogo{
+    display: flex;
+    align-items: center;
+}
+
+.divIconesCabecalho{
+    display: flex;
+    align-items: center;
+}
+
+.containerIcone{
+    padding: 0.5em;
+}
+
+.listaMenu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: var(--cor-de-fundo-secundario);
+    width: 60vw;
+}
+
+.containerBotao:checked ~ .listaMenu{
+    display: block;
+} 
+
+.listaMenuTitulo, .listaMenuItem{
+    padding: 1em;
+}
+
+.listaMenuTitulo{
+    color: var(--cor-laranja);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.listaMenuItemLink{
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+}
+
+.containerLogoAluraBooks{
+    margin-left: 1.5em;
+}
+
+.containerBotao, .opcoes, .containerTitulo, .textoDescricaoIcone{
+    display: none;
+}
+
+@media screen and (min-width: 1024px){
+    .containerTitulo{
+        display: block;
+         margin-left: 0.6em;
+    }
+
+   .opcoes{
+    display: flex;
+    column-gap: 1em;
+   }
+
+   .opcoesBotao:checked ~ .listaMenu{
+    display: block;
+    width: auto;
+   }
+
+   .cabecalhoMenuHamburguer, .opcoesBotao, .containerItemFavoritos{
+    display: none;
+   }
+}
+
+@media screen and (min-width: 1728px) {
+    .cabecalho{
+        padding: 1em 5em;
+    }
+
+    .containerTitulo{
+        margin-right: 3.5em;
+    }
+
+    .containerLinkIcones{
+        display: flex;
+        align-items: center;
+    }
+
+    .divIconesCabecalho{
+        gap:3.75em;
+    }
+
+    .opcoes{
+        gap: 2em;
+        margin-right: auto;
+    }
+
+    .textoDescricaoIcone{
+        display: block;
+        font-size: 20px;
+    }
+}

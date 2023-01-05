@@ -1,0 +1,123 @@
+.carrosselTitulo{
+    color: var(--cor-laranja);
+    background-color: var(--cor-de-fundo-secundario);
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1.5em 0 0.6em 0;
+}
+
+.swiper-pagination{
+    position: initial;
+    margin: 0.6em 0 1em 0 ;
+}
+
+.card{
+    background: var(--cor-de-fundo-secundario);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin: 1.25em 1.5em;
+    padding: 1.5em 1em;
+}
+
+.cardDescricao{
+    display: flex;
+    justify-content: space-between;
+}
+
+.descricao{
+    margin-right: 1em;
+}
+
+.cardTitulo{
+    color: var(--cor-laranja);
+    font-weight: 700;
+}
+
+.livroTitulo{
+    color: var(--cor-azul);
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0.6em 0;
+}
+
+.livroDescricao{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.descricaoAvaliacao{
+    margin: 0.6em 0;
+}
+
+.cardBotoes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.botoes{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.botaoAncora{
+    background-color: var(--cor-laranja);
+    color: var(--cor-de-fundo-secundario);
+    font-weight: 700;
+    padding: 1em 2.20em;
+}
+
+@media  screen and (min-width: 1024px) {
+    .carrosselTitulo{
+        font-size: 26px;
+    }
+
+    .swiper-pagination{
+        margin: 2em 0 3em 0;
+    }
+
+    .swiper{
+        width: 60%;
+    }
+
+    .card{
+        width: 40%;
+        margin: 3em auto;
+    }
+}
+
+@media screen and (min-width: 1728px){
+    .carrosselTitulo{
+        font-size: 32px;
+    }
+
+    .containerCarrosel{
+        display: flex;
+        padding: 3em 10.8em 7em;
+        align-items: center;
+        gap: 3.8em;
+    }
+
+    .swiper-pagination{
+        margin: 1em 0;
+    }
+
+    .swiper{
+        width: 50%;
+    }
+
+    .card{
+        width: 60%;
+    }
+    .cardTitulo{
+        font-size: 32px;
+    }
+
+    .livroDescricao{
+        font-size: 16px;
+    }
+}
